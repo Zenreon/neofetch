@@ -1,1 +1,8 @@
+[Unit]
+Description=run checkupdate every hour
 
+[Service]
+ExecStart=bash /home/zenreon/Documents/Scripts/updaterun
+
+[Install]
+WantedBy=checkupdate.target
