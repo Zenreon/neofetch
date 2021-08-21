@@ -2,7 +2,7 @@
 Description=run checkupdate every hour
 
 [Service]
-ExecStart=bash ~/scripts/updaterun
+ExecStart=bash /usr/bin/updaterun
 
 [Install]
 WantedBy=checkupdate.target
