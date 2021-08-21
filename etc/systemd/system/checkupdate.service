@@ -1,0 +1,8 @@
+[Unit]
+Description=run checkupdate every hour
+
+[Service]
+ExecStart=bash /usr/bin/updaterun
+
+[Install]
+WantedBy=checkupdate.target
