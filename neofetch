@@ -73,7 +73,7 @@ print_info() {
     info "CPU" cpu
     info "GPU" gpu
     info "Memory" memory
-    prin "Updates" $(cat ~/scripts/updateoutput)
+    prin "Updates" $(cat /usr/bin/updateoutput)
 
     # info "GPU Driver" gpu_driver  # Linux/macOS only
     # info "Disk" disk
