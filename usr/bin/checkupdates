@@ -97,7 +97,7 @@ fi
 
 mkdir -p "$CHECKUPDATES_DB"
 ln -s "${DBPath}/local" "$CHECKUPDATES_DB" &> /dev/null
-if ! fakeroot -- pacman -Syu --dbpath "$CHECKUPDATES_DB" --logfile /dev/null &> /dev/null; then
+if ! fakeroot -- pacman -Sy --dbpath "$CHECKUPDATES_DB" --logfile /dev/null &> /dev/null; then
 	error 'Cannot fetch updates'
 	exit 1
 fi
